@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+
+    <style>
+        :root {
+            --bg-color: lightgreen;
+            --text-color: red;
+        }
+
+        /* var() function used here */
+        body {
+            background-color: var(--bg-color);
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--text-color);
+        }
+
+        div {
+            color: var(--text-color);
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to the javaTpoint.com</h1>
+
+    <div>
+        This is an example of CSS variables
+        <h3>--bg-color: lightgreen;</h3>
+        <h3>--text-color: red;</h3>
+
+    </div>
+</body>
+
+</html>
